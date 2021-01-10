@@ -60,7 +60,7 @@ class UserController extends Controller
   {
       
     $this->validate($request, [
-        'request' => 'required|mimes:csv,xlsx',
+        'request' => 'required|mimes:csv,txt,xlsx,xls',
     ]);
     $lead = new Lead($request->input()) ;
  
